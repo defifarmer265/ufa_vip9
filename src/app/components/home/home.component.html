@@ -1,0 +1,170 @@
+<ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig" >
+    <div ngxSlickItem *ngFor="let slide of imageUrls" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%">
+    </div>
+</ngx-slick-carousel>
+<div  class="content_">
+    <div  class="container regiseter_div">
+        <div  class="register_3"> สมัครกับเราเพียง 3 ขั้นตอนง่ายๆ </div>
+    </div>
+    <div  class="container">
+        <div  class="row sport_button icon_callcenter">
+            <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
+                <div  class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img  class="tt_img_df" src="assets/images/menu/step_1.jpg"></div>
+            </div>
+            <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
+                <div  class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img  class="tt_img_df" src="assets/images/menu/step_2.jpg"></div>
+            </div>
+            <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
+                <div  class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img  class="tt_img_df" src="assets/images/menu/step_3.jpg"></div>
+            </div>
+            <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
+                <div  class="sport_img tt_l tt_col_c banner_hover Parent fadeInLeft animated"><img  class="tt_img_df" src="assets/images/menu/step_4.jpg"></div>
+            </div>
+        </div>
+        <div  class="content__area">
+            <div  class="detailL">
+                <div  class="header_tab ">มี 3 คาสิโนออนไลน์ มาตรฐานชั้นนำตลอดกาล</div>
+                <div  class="content_tab height_content" style="padding-bottom: 10px;">
+                    <div  class="row deposit__area" style="margin: auto; padding-bottom: 0px;">
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/sport_betting"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/sport_betting.jpg"></div>
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/live_football"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/live_football.jpg"></div>
+                    </div>
+                    <div  class="row deposit__area" style="margin: auto; padding-bottom: 0px;">
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/lotto_online"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/lotto_online.jpg"></div>
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/casino_online"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/casino_online.jpg"></div>
+                    </div>
+                    <div  class="row deposit__area" style="margin: auto; padding-bottom: 0px;">
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/muay_online"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/muay_online.jpg"></div>
+                        <div  class="col col-sm-6" tabindex="0" routerLink="/page/game_online"><img  class="hvr-push btn_hover icon_game" src="/assets/images/menu/game_online.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div  class="detailR">
+                <div  class="header_tab">ระบบ ฝาก-ถอน อัตโนมัติ</div>
+                <div  class="content_tab height_content">
+                    <ul  class="nav nav-tabs" style="padding:4px;">
+                        <li  class="nav-item"><a (click)="contentLoad('deposit')" class="nav-link deposit active">ฝาก</a></li>
+                        <li  class="nav-item"><a (click)="contentLoad('withdraw')"  class="nav-link withdraw">ถอน</a></li>
+                    </ul>
+                    <div  class="deposit_area">
+                        <app-deposit></app-deposit>
+                    </div>
+                    <div  class="withdraw_area" style="display: none;">
+                        <app-withdraw></app-withdraw>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="container topic_area">
+            <div  class="step_topic"> &nbsp; </div>
+        </div>
+        <div  class="row deposit__area area_main" style="margin: auto;padding-bottom: 0px;">
+            <div  class="col col-sm-12 text_white font12 content_tab text_main">
+                <div  class="text_yello">แทงบอล คาสิโน เว็บพนันออนไลน์ ที่ดีที่สุด พร้อมระบบฝากถอนอัจฉริยะ</div> &nbsp;&nbsp;&nbsp;&nbsp; เว็บพนัน ที่ให้บริการ แทงบอล อันดับหนึ่ง UFAVIP9 ให้บริการ แทงบอลออนไลน์ และ พนันออนไลน์ อื่นๆ คาสิโน มวย หวย ด้วยการให้บริการ พนันออนไลน์ แบบครบวงจรตลอด 24 ชม. ด้วยประสบการณ์ในแบบมืออาชีพในการให้บริการ ท่านจึงมั่นใจได้อย่างแน่นอนว่าเรามั่นคง จริงใจ ฝากถอนไวที่สุด ด้ายระบบอัตโนมัติ เพียงโอนเงินเข้าบัญชี เครดิตจะเพิ่มให้ทันที แทงบอลฝาก 1 วินาที และทำรายการถอนที่หน้าเล่น รอรับเงินภายใน 15 วินาที เท่านั้น พร้อมกิจกรรมและโปรโมชั่นมากมายให้แก่ลูกค้า พนันบอล คาสิโน เว็บพนันออนไลน์ ฝากถอนไวที่สุด (ฝาก 1 วิถอน 15 วิ) ให้นึกถึง UFAVIP9
+                <br > &nbsp;&nbsp;&nbsp;&nbsp; เราคือ เว็บแทงบอล เว็บตรงไม่ผ่านเอเย่นต์ ด้วยบริการที่ครอบคลุมทุกความต้องการของลูกค้าทุกอย่าง ไม่ว่าจะเป็น แทงบอลออนไลน์ มวย คาสิโน หวยและเกมอื่นๆ ได้รับความนิยมในหมู่ลูกค้า พนันบอล และคาสิโน เป็นจำนวนมาก การันตีด้วยยอดฝากและคำชมจากลูกค้า ด้วยข้อดีของเรา มีให้เลือก แทงบอล ครบทุกคู่ ทุกลีคฟุตบอล ด้วยราคาน้ำดีที่สุด และตัวเลขผลตอบแทนที่ดีที่สุดในบรรดา เว็บพนัน มีทั้ง แทงบอลเต็ง , แทงบอลสเต็ป , แทงบอลสด(LIVE) , แทงบอลสเต็ป(Live) , แทงบอลเตะมุม และ แทงบอลราคาพูล แบบต่างประเทศ มีราคาให้เลือกทั้งราคาบอลมาเลย์ ราคาบอลฮ่องกง ราคาบอลยุโรป นอกจากนี้ เว็บแทงบอลออนไลน์ สามารถเลือก แทงบอล แบบ 45 นาที 90 นาที และหมวดหมู่ </div>
+        </div>
+        <div  class="content__area" style="padding-top: 10px;">
+            <div  class="detailL2">
+                <div  class="header_tab" style="color: #AE2500; text-align: left;">ข้อดีของเว็บพนันออนไลน์ UFABET</div>
+                <div  class="content_tab " style="padding-bottom: 40px;">
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> เล่นตรงกับ <span  class="ufa_bet_text_gold">บริษัท UFABET </span> ไม่ผ่านเอเย่นต์ หมดปัญหาการถูกหลอกลวง </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> ราคาบอล 4 ดังค์ คอมบอล 0.5% คอมคาสิโน 0.7% ทุกยอดการเล่น </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> แทงบอลขั้นต่ำกับ <span  class="ufa_bet_text_gold">UFABET</span> เพียง 10 บาท </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> สเต็ปแทงเริ่มต้นเพียง 2 คู่ </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"><span  class="ufa_bet_text_gold">UFABET</span> เปิดบอลให้เดิมพันมากที่สุด มากกว่า sbobet ฝาก/ถอน ด้วยระบบที่ทันสมัยที่ในโลกเพียง 2 นาทีตลอด 24 ชม. </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"><span  class="ufa_bet_text_gold">UFABET</span> เล่นง่ายไม่ต้องโหลดแอปพลิเคชั่นใดๆ </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> มีคาสิโนให้ร่วมสนุกหลากหลาย </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> มีเกมส์ให้เลือกเล่นมากมาย </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> สล็อตออนไลน์ที่แจ็คพอตแตกมากที่สุดในประเทศไทย </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> มีมวยไทยเป็นเดิมพันยกต่อยก </div>
+                    <div  class="ufabet_text"><img  alt="" class="currect_img" src="assets/images/icon/currect.png"> มีเดิมพันไก่ชนถ่ายทอดสดจากทั่วโลก </div>
+                </div>
+                <div  class="col col-sm-12 banner_pro"><img  class="" src="/assets/images/content/banner_02.jpg" style="width: 100%;"></div>
+                <div  class="col col-sm-12 banner_bank"><img  class="" src="/assets/images/content/ibanking4.jpg" style="width: 100%;"></div>
+            </div>
+            <div  class="detailR2">
+                <div  class="content_tab">
+                    <div  class="row deposit__area" style="margin: auto;">
+                        <div  class="col col-sm-12 text_white font12"> เราคือ <span  class="text_yello">เว็บแทงบอลออนไลน์ UFABET</span> ไม่ผ่านเอเย่นต์ ทำให้มีราคาค่าน้ำที่เอื้อต่อผลกำไรมากกว่า จะเอากำไรจากท่าน เปิดราคาน้ำที่ราคาสูงมาก เพราะเราเชื่อว่า ถ้าท่านอยู่ได้ เราก็อยู่ได้เช่นกัน เราอยากส่งมอบความสุขและรอยยิ้มให้กับลูกค้าของเราให้มากที่สุดเท่าที่เราจะทำได้ นั่นคือ ความจริงใจที่เราอยากให้ลูกค้าของเรารับรู้มากที่สุด เราจะบริการท่านแบบ VIP ด้วยช่องทางการเงิน ที่พร้อมมากที่สุด เว็บเรามีความหลากหลาย พร้อมการถ่ายทอดสดตลอดการแข่งขัน ให้ความเพลิดเพลิน สนุกสนานมากยิ่งขึ้น ร่วมลุ้น ร่วมเชียร์ไปพร้อมกับการ ลงทุนของท่านได้เลย สำหรับสาย ดูบอลสุด <span  class="text_red">ลิงค์ถ่ายทอดสด</span></div>
+                    </div>
+                    <hr  style="background: white;">
+                    <div  class="row deposit__area" style="margin: auto;">
+                        <div  class="col col-sm-12"><img  class="hvr-push btn_hover" src="/assets/images/content/banner_main.png" style="width: 100%;"></div>
+                    </div>
+                    <div  class="deposit_text"> ฝาก-ถอนได้ทุกธนาคารตลอด 24 ชั่วโมง </div>
+                    <div  class="deposit_text_2"> รวดเร็ว มั่นคง ปลอดภัย บริการทุกระดับประทับใจ </div>
+                </div>
+            </div>
+            <div  class="all_banking"><img  alt="" src="/assets/images/icon/ibanking_edit_final.jpg"></div>
+            <div  class="ul_area left_area">
+                <div  class="menu_footer_ul">
+                    <ul >
+                        <li  tabindex="0" routerLink="/page/register_agent">สมัครเอเย่นต์ ufabet</li>
+                        <li  tabindex="0" routerLink="/page/web_bet_ufabet">เว็บพนันบอล UFABET</li>
+                        <li  tabindex="0" routerLink="/page/web_bet_online">เว็บแทงบอลออนไลน์</li>
+                        <li  tabindex="0" routerLink="/page/deposit">แจ้งฝาก-แจ้งถอน</li>
+                    </ul>
+                </div>
+                <div  class="menu_footer_ul">
+                    <ul >
+                        <li  tabindex="0" routerLink="/page/betballonline">แทงบอล UFABET</li>
+                        <li  tabindex="0" routerLink="/page/betballonline_mobile">แทงบอลมือถือ UFABET</li>
+                        <li  tabindex="0" routerLink="/page/bet_step_online">แทงบอลสเต็ป</li>
+                        <li  tabindex="0" routerLink="/page/bet_cash">แทงบอลเงินสด</li>
+                    </ul>
+                </div>
+                <div  class="menu_footer_ul">
+                    <ul >
+                        <li  tabindex="0" routerLink="/page/casino_online">CASINO ONLINE</li>
+                        <li  tabindex="0" routerLink="/page/contact">CONTACT US</li>
+                        <li  tabindex="0" routerLink="/page/game">GAME</li>
+                        <li  tabindex="0" routerLink="/page/live_HD">LIVE FOOTBALL</li>
+                        <li  tabindex="0" routerLink="/page/muay_online">MUAY THAI</li>
+                    </ul>
+                </div>
+                <div  class="menu_footer_ul">
+                    <ul >
+                        <li  tabindex="0" routerLink="/promotion">PROMOTION</li>
+                        <li  tabindex="0" routerLink="/page/sport_betting">SPORT BETTING</li>
+                        <li  tabindex="0" routerLink="/page/comment_customer">ความคิดเห็นจากลูกค้า</li>
+                        <li  tabindex="0" routerLink="/page/price_ufabet">ราคาบอลวันนี้ UFABET</li>
+                        <li  tabindex="0" routerLink="/page/register">สมัครสมาชิก</li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="right_area">
+                <div  class="title_facebook_page">ติดตามโปรโมชั่นดีๆของเราได้ที่แฟนเพจ <span  class="text_facebook">facebook</span></div>
+                <div  class="row sport_button icon_callcenter">
+                    <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
+                        <div  class="facebook_image tt_l tt_col_c banner_hover Parent fadeInLeft animated">
+                            <a  href="https://www.facebook.com/sportmoney9/?modal=admin_todo_tour"><img  class="tt_img_df" src="assets/images/footer/1.jpg"></a>
+                        </div>
+                    </div>
+                    <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
+                        <div  class="facebook_image tt_l tt_col_c banner_hover Parent fadeInLeft animated">
+                            <a  href="https://www.facebook.com/108795380518878/"><img  class="tt_img_df" src="assets/images/footer/2.jpg"></a>
+                        </div>
+                    </div>
+                    <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true" style="overflow: hidden; ">
+                        <div  class="facebook_image tt_l tt_col_c banner_hover Parent fadeInLeft animated">
+                            <a  href="https://www.facebook.com/114595266600692/"><img  class="tt_img_df" src="assets/images/footer/3.jpg"></a>
+                        </div>
+                    </div>
+                    <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
+                        <div  class="facebook_image tt_l tt_col_c banner_hover Parent fadeInLeft animated">
+                            <a  href="https://www.facebook.com/110208503710234"><img  class="tt_img_df" src="assets/images/footer/4.jpg"></a>
+                        </div>
+                    </div>
+                    <div  class="col col-6 col-sm-3 hvr-push no-padding top_banner aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" style="overflow: hidden; ">
+                        <div  class="facebook_image tt_l tt_col_c banner_hover Parent fadeInLeft animated">
+                            <a  href="https://www.facebook.com/114447923283346/"><img  class="tt_img_df" src="assets/images/footer/5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
